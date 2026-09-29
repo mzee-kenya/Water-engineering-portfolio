@@ -1,0 +1,1107 @@
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+header {
+    background-color: #ffffff;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+    width: 94%;
+    max-width: 1400px;
+    margin: auto;
+
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* Supports the old GM heading */
+nav > h2 {
+    color: #063b63;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+
+/* New brand layout if used */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.brand-text h2 {
+    color: #063b63;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.brand-text p {
+    color: #557080;
+    font-size: 11px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+
+    min-width: 75px;
+    padding: 9px 10px;
+
+    color: #063b63;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #0879b9;
+    color: white;
+}
+
+/* =====================================================
+   
+/* Get In Touch button */
+
+.nav-contact {
+    background-color: #0879b9;
+    color: white !important;
+
+    padding: 10px 18px !important;
+
+    border-radius: 6px !important;
+}
+
+.nav-contact:hover {
+    background-color: #063b63 !important;
+}
+    /* =====================================================
+   HOME
+   ===================================================== */
+#home {
+    min-height: 650px;
+    padding: 60px 7%;
+    position: relative;
+    z-index:10;
+
+
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    align-items: center;
+    gap: 60px;
+
+    /* WATER IMAGE + NAVY BLUE OVERLAY */
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(21, 239, 238, 0.88),
+            rgba(11, 199, 232, 0.72),
+            rgba(106, 203, 218, 0.55)
+        ),
+        url("images/water-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   HOME TEXT
+   ===================================================== */
+
+.hero-content {
+    grid-column: 2;
+    width: 100%;
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+}
+.hero-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:3vw;
+    color:#0281e2
+
+}
+
+.hero-image {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 380px;
+    height: 520px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+.hero-label {
+    margin-bottom: 15px;
+
+    color: #08aeea;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    margin: 0 0 20px;
+
+    color: #ffffff;
+
+    font-size: 52px;
+    line-height: 1.08;
+    font-weight: 700;
+}
+
+.hero-description {
+    max-width: 560px;
+
+    margin-bottom: 30px;
+
+    color: #d8edf8;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   HOME BUTTONS
+   ===================================================== */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #08aeea;
+
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #0879b9;
+
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: transparent;
+
+    color: white;
+
+    border: 2px solid #08aeea;
+}
+
+.secondary-btn:hover {
+    background-color: #08aeea;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   GEOFFREY PHOTO
+   ===================================================== */
+
+.hero-image {
+    margin-bottom: 5%;
+    position:fixed;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: 75%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    background:transparent;
+
+}
+
+
+
+/* =====================================================
+   HOME STATS
+   ===================================================== */
+
+.hero-stats {
+    display: none;
+}
+
+/* =====================================================
+   EXPERTISE
+   ===================================================== */
+
+.expertise {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #d9e8f2;
+}
+
+.expertise-item {
+    text-align: center;
+
+    padding: 20px 12px;
+
+    border-right: 1px solid #d9e8f2;
+}
+
+.expertise-item:last-child {
+    border-right: none;
+}
+
+.expertise-icon {
+    font-size: 28px;
+
+    margin-bottom: 7px;
+}
+
+.expertise-item h3 {
+    font-size: 14px;
+
+    color: #064b82;
+
+    margin-bottom: 3px;
+}
+
+.expertise-item p {
+    font-size: 12px;
+
+    color: #557080;
+}
+
+
+/* =====================================================
+   ABOUT
+   ===================================================== */
+
+#about {
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background-color: #f4f9fd;
+
+    color: #333;
+}
+
+#about h2 {
+    font-size: 36px;
+
+    color: #063b63;
+
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 850px;
+
+    margin: 0 auto 15px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #4d6475;
+}
+
+
+/* =====================================================
+   PROFESSIONAL EXPERIENCE
+   ===================================================== */
+
+#experience {
+    padding: 80px 7%;
+
+    background-color: #ffffff;
+}
+
+#experience h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #063b63;
+
+    margin-bottom: 45px;
+}
+
+
+/* Main experience list */
+
+#experience > ul {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* Each job */
+
+#experience > ul > li {
+    position: relative;
+
+    margin-bottom: 30px;
+
+    padding: 30px 35px;
+
+    background-color: #f4f9fd;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #08aeea;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Job title */
+
+#experience > ul > li > h3 {
+    font-size: 24px;
+
+    color: #063b63;
+
+    margin-bottom: 6px;
+}
+
+
+/* Company and date */
+
+#experience > ul > li > p {
+    margin-bottom: 5px;
+
+    color: #4d6475;
+
+    font-size: 16px;
+}
+
+
+/* Responsibilities */
+
+#experience li ul {
+    margin-top: 18px;
+
+    padding-left: 22px;
+}
+
+#experience li li {
+    margin-bottom: 9px;
+
+    color: #34495e;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   EDUCATION BACKGROUND
+   ===================================================== */
+
+#education {
+    padding: 80px 7%;
+
+    background-color: #f4f9fd;
+}
+
+#education h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #063b63;
+
+    margin-bottom: 45px;
+}
+
+.education-item {
+    max-width: 900px;
+
+    margin: 0 auto 20px;
+
+    padding: 28px 35px;
+
+    background-color: white;
+
+    border-left: 5px solid #08aeea;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+}
+
+.education-item h3 {
+    font-size: 22px;
+
+    color: #063b63;
+
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 16px;
+
+    color: #4d6475;
+
+    margin-bottom: 5px;
+}
+
+.education-item p strong {
+    color: #0879b9;
+}
+
+
+/* =====================================================
+   ACHIEVEMENTS
+   ===================================================== */
+
+#achievements {
+    padding: 80px 7%;
+
+    background-color: #ffffff;
+}
+
+#achievements h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #063b63;
+
+    margin-bottom: 40px;
+}
+
+.achievement-item {
+    max-width: 900px;
+
+    margin: 0 auto 25px;
+
+    padding: 28px 35px;
+
+    background-color: #f4f9fd;
+
+    border-left: 5px solid #08aeea;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.achievement-item h3 {
+    font-size: 22px;
+
+    color: #063b63;
+
+    margin-bottom: 10px;
+}
+
+.achievement-item p {
+    font-size: 16px;
+
+    color: #4d6475;
+
+    line-height: 1.7;
+}
+
+.achievement-item ul {
+    padding-left: 25px;
+}
+
+.achievement-item li {
+    margin-bottom: 10px;
+
+    color: #34495e;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   SKILLS
+   ===================================================== */
+
+#skills {
+    padding: 80px 7%;
+
+    background-color: #f4f9fd;
+
+    text-align: center;
+}
+
+#skills h2 {
+    display: inline-block;
+
+    font-size: 36px;
+
+    color: #063b63;
+
+    margin-bottom: 35px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 3px solid #08aeea;
+}
+
+#skills ul {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    list-style: none;
+}
+
+#skills li {
+    padding: 18px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #08aeea;
+
+    color: #063b63;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =====================================================
+   PROJECTS
+   ===================================================== */
+
+#projects {
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+#projects h2 {
+    font-size: 36px;
+
+    color: #063b63;
+
+    margin-bottom: 40px;
+}
+
+#projects > ul {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+#projects > ul > li {
+    padding: 28px;
+
+    background-color: #f4f9fd;
+
+    border-radius: 10px;
+
+    border-top: 4px solid #08aeea;
+
+    text-align: left;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+#projects > ul > li:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#projects h3 {
+    margin-bottom: 10px;
+
+    color: #063b63;
+
+    font-size: 20px;
+}
+
+#projects p {
+    color: #4d6475;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+#contact {
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background-color: #f4f9fd;
+}
+
+#contact h2 {
+    font-size: 36px;
+
+    color: #063b63;
+
+    margin-bottom: 15px;
+}
+
+#contact > p {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    color: #4d6475;
+}
+
+#contact ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 10px;
+
+    color: #063b63;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    padding: 22px;
+
+    text-align: center;
+
+    background-color: #062a4d;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVENESS
+   ===================================================== */
+
+
+    .home-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+    
+
+    .expertise {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #projects > ul {
+        grid-template-columns: 1fr;
+    }
+
+    #about,
+    #experience,
+    #education,
+    #achievements,
+    #skills,
+    #projects,
+    #contact {
+        padding: 60px 20px;
+    }
+
+
+
+@media (max-width: 600px) {
+
+    #home {
+        padding: 45px 20px;
+    }
+
+    .home-photo {
+        width: 240px;
+        height: 320px;
+    }
+
+    .home-text h1 {
+        font-size: 38px;
+    }
+
+    .home-text h2 {
+        font-size: 18px;
+    }
+
+    .home-description {
+        font-size: 15px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+
+        max-width: 230px;
+
+        text-align: center;
+    }
+
+    #about h2,
+    #experience h2,
+    #education h2,
+    #achievements h2,
+    #skills h2,
+    #projects h2,
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    .education-item,
+    .achievement-item,
+    #experience > ul > li {
+        padding: 22px;
+    }
+}
+@media (max-width: 900px) {
+
+    #home {
+        min-height: auto;
+
+        padding: 60px 25px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        max-width: 700px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 300px;
+
+        height: 380px;
+
+        flex-shrink: 0;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+}/* ===== FINAL HOME POSITION FIX ===== */
+
+#home {
+    min-height: 650px !important;
+    padding: 60px 7% !important;
+
+    display: block !important;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(6, 42, 77, 0.88),
+            rgba(6, 42, 77, 0.72),
+            rgba(6, 42, 77, 0.55)
+        ),
+        url("images/water-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative !important;
+    overflow: hidden;
+}
+
+/* PHOTO — FORCE TO LEFT */
+#home .hero-image {
+    position: absolute !important;
+
+    left: 7% !important;
+    bottom: 0 !important;
+
+    width: 360px !important;
+    height: 500px !important;
+
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+
+    z-index: 2 !important;
+}
+
+/* PHOTO ITSELF */
+#home .hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+    object-position: center bottom !important;
+}
+
+/* TEXT — FORCE TO RIGHT */
+#home .hero-content {
+    position: relative !important;
+
+    margin-left: 430px !important;
+
+    width: auto !important;
+    max-width: 650px !important;
+
+    z-index: 3 !important;
+}
+
+/* LARGE HEADING */
+#home .hero-content h1 {
+    color: white !important;
+    font-size: 52px !important;
+    line-height: 1.08 !important;
+}
+
+/* DESCRIPTION */
+#home .hero-description {
+    color: #d8edf8 !important;
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+}
+
+/* BUTTONS */
+#home .hero-buttons {
+    display: flex !important;
+    gap: 15px !important;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+
+    #home {
+        min-height: auto !important;
+        padding: 60px 25px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    #home .hero-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    #home .hero-image {
+        position: relative !important;
+        left: auto !important;
+        bottom: 100px !important;
+
+        width: 300px !important;
+        height: 380px !important;
+    }
+
+    #home .hero-buttons {
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+}
+/* HIDE EXTRA HOME LINKS/STATS */
+#home .hero-stats {
+    display: none !important;
+}
+/* Home Services / NRW Management Section */
+.home-services {
+    width: 50%;
+    margin: 20px auto 0;
+    position: relative;
+    z-index: 9;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: white;
+    padding: 20px 20px;
+
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    box-shadow: 0 7px 23px rgba(0, 0, 0, 0.12);
+}
