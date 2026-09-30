@@ -1,520 +1,376 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>GEOFFREY MWANGI NJOGO | WATER AND ENVIRONMENTAL ENGINEERING</title>
-
+    <title>Eng. Geoffrey Mwangi Njogo | Water Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- ================= NAVIGATION ================= -->
-    <header>
-        <nav>
-            <h2>GM</h2>
+    <header class="navbar">
+        <nav class="nav-container">
+            <a href="#home" class="brand">
+                <div class="brand-logo">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="36" height="36" rx="8" fill="#0878C9"/>
+                        <text x="18" y="24" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="18" font-weight="700">GM</text>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>Eng. Geoffrey Mwangi Njogo</h1>
+                    <p>Water Engineer | NRW Management</p>
+                </div>
+            </a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">CV</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Get In Touch</a></li>
             </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
 
 
-    <!-- ================= HOME ================= --><!-- ================= HOME ================= -->
-    <section id="home">
+    <!-- ================= HOME / HERO ================= -->
+    <section id="home" class="hero-section">
+        <div class="hero-wrapper">
+            <div class="hero-photo">
+                <img src="images/Geoffrey.png" alt="Eng. Geoffrey Mwangi Njogo - Professional portrait">
+            </div>
 
-    <div class="hero-content">
-        <p class="hero-name">ENGINEER GEOFFREY MWANGI</p>
-        <p class="hero-label">
-            WATER ENGINEER | NRW MANAGEMENT
-        </p>
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Eng. Geoffrey<br>Mwangi Njogo</h1>
+                <p class="hero-title">Water Engineer | NRW Management</p>
+                <p class="hero-description">
+                    Improving water utility efficiency through Non-Revenue Water reduction,
+                    metering, DMA management and data-driven solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        View My Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download CV
+                    </a>
+                </div>
+            </div>
 
-        <h1>
-            Turning Water-Loss<br>
-            Challenges into<br>
-            Efficient Water Utilities
-        </h1>
 
-        <p class="hero-description">
-            I'm a Water and Environmental Engineer passionate about
-            water resources management, environmental engineering,
-            sustainable water solutions and improving access to clean
-            and reliable water.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="primary-btn">
-                View My Projects
-            </a>
-
-            <a href="#contact" class="secondary-btn">
-                Contact Me
-            </a>
         </div>
-    </div>
+    </section>
 
-    <!-- GEOFFREY'S PHOTO -->
-    <div class="hero-image">
-        <img src="images/Geoffrey.png" alt="Eng. Geoffrey Mwangi Njogo" class="hero-image">
-    </div>
-
-    <div class="hero-stats">
-    
-    </div><!-- Home Services Section -->
-<div class="home-services">
-
-    <div class="service-item">
-        <div class="service-icon">💧</div>
-        <h3>NRW Management</h3>
-        <p>Reduce water losses</p>
-    </div>
-
-    <div class="service-item">
-        <div class="service-icon">📊</div>
-        <h3>DMA Management</h3>
-        <p>Better monitoring</p>
-    </div>
-
-    <div class="service-item">
-        <div class="service-icon">💧</div>
-        <h3>Metering</h3>
-        <p>Accurate billing</p>
-    </div>
-
-    <div class="service-item">
-        <div class="service-icon">🔍</div>
-        <h3>Water Audits</h3>
-        <p>Find &amp; fix leakages</p>
-    </div>
-
-    <div class="service-item">
-        <div class="service-icon">📈</div>
-        <h3>Data Analysis</h3>
-        <p>Smarter decisions</p>
-    </div>
-
-</div>
-
-
-</section>
 
     <!-- ================= EXPERTISE ================= -->
-    <section class="expertise" id="expertise">
+    <section class="expertise-section" id="expertise">
+        <div class="expertise-container">
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                </div>
+                <h3>NRW Management</h3>
+                <p>Reduce water losses</p>
+            </div>
 
-        <div class="expertise-item">
-            <div class="expertise-icon">💧</div>
-            <h3>NRW Management</h3>
-            <p>Reduce water losses</p>
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                </div>
+                <h3>DMA Management</h3>
+                <p>Better monitoring</p>
+            </div>
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                </div>
+                <h3>Metering</h3>
+                <p>Accurate billing</p>
+            </div>
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </div>
+                <h3>Water Audits</h3>
+                <p>Find &amp; fix leakages</p>
+            </div>
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <h3>Data Analysis</h3>
+                <p>Smarter decisions</p>
+            </div>
         </div>
-
-        <div class="expertise-item">
-            <div class="expertise-icon">⚙</div>
-            <h3>DMA Management</h3>
-            <p>Better monitoring</p>
-        </div>
-
-        <div class="expertise-item">
-            <div class="expertise-icon">◉</div>
-            <h3>Metering</h3>
-            <p>Accurate billing</p>
-        </div>
-
-        <div class="expertise-item">
-            <div class="expertise-icon">📋</div>
-            <h3>Water Audits</h3>
-            <p>Find & fix leakages</p>
-        </div>
-
-        <div class="expertise-item">
-            <div class="expertise-icon">📊</div>
-            <h3>Data Analysis</h3>
-            <p>Smarter decisions</p>
-        </div>
-
-        <div class="expertise-item">
-            <div class="expertise-icon">🌿</div>
-            <h3>Environmental</h3>
-            <p>Sustainable solutions</p>
-        </div>
-
     </section>
 
 
     <!-- ================= ABOUT ================= -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a Water and Environmental Engineer with experience in
-            water resources management, Non-Revenue Water management,
-            environmental engineering and water utility operations.
-        </p>
-
-        <p>
-            My work focuses on improving water utility efficiency,
-            reducing water losses, managing infrastructure and developing
-            sustainable solutions for communities.
-        </p>
-
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-text">
+                I am a Water and Environmental Engineer with experience in
+                water resources management, Non-Revenue Water management,
+                environmental engineering and water utility operations.
+            </p>
+            <p class="section-text">
+                My work focuses on improving water utility efficiency,
+                reducing water losses, managing infrastructure and developing
+                sustainable solutions for communities.
+            </p>
+        </div>
     </section>
 
 
     <!-- ================= PROFESSIONAL EXPERIENCE ================= -->
-    <section id="experience">
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
 
-        <h2>Professional Experience</h2>
+            <div class="experience-list">
+                <div class="experience-card">
+                    <div class="experience-card-header">
+                        <h3>Non-Revenue Water Officer</h3>
+                        <span class="experience-date">May 2024 - Present</span>
+                    </div>
+                    <p class="experience-company">Othaya-Mukurweini Water and Sanitation Company (OMWASCO)</p>
+                    <ul class="experience-details">
+                        <li>Supervision of the implementation of the Non-Revenue Water (NRW) reduction plan and strategies.</li>
+                        <li>Training Technical Department staff on the use of NRW management equipment.</li>
+                        <li>Development of a Non-Revenue Water reduction plan and policy.</li>
+                        <li>Appraising NRW section staff and identifying training needs.</li>
+                        <li>Preparation of essential data to support the revision of the company's water tariff.</li>
+                    </ul>
+                </div>
 
-        <ul>
+                <div class="experience-card">
+                    <div class="experience-card-header">
+                        <h3>Technical Services Manager</h3>
+                        <span class="experience-date">July 2023 - April 2024</span>
+                    </div>
+                    <p class="experience-company">Noromaru Water and Sanitation Company Limited (NOROWASCO)</p>
+                    <ul class="experience-details">
+                        <li>Mapping and analysing company assets.</li>
+                        <li>Operations and maintenance of company water assets.</li>
+                        <li>Assisting in company projects.</li>
+                    </ul>
+                </div>
 
-            <li>
-                <h3>Non-Revenue Water Officer</h3>
-
-                <p>
-                    Othaya-Mukurweini Water and Sanitation Company
-                    (OMWASCO)
-                </p>
-
-                <p>May 2024 - Present</p>
-
-                <ul>
-                    <li>
-                        Supervision of the implementation of the
-                        Non-Revenue Water (NRW) reduction plan and strategies.
-                    </li>
-
-                    <li>
-                        Training Technical Department staff on the use
-                        of NRW management equipment.
-                    </li>
-
-                    <li>
-                        Development of a Non-Revenue Water reduction
-                        plan and policy.
-                    </li>
-
-                    <li>
-                        Appraising NRW section staff and identifying
-                        training needs.
-                    </li>
-
-                    <li>
-                        Preparation of essential data to support the
-                        revision of the company's water tariff.
-                    </li>
-                </ul>
-            </li>
-
-
-            <li>
-                <h3>Technical Services Manager</h3>
-
-                <p>
-                    Noromaru Water and Sanitation Company Limited
-                    (NOROWASCO)
-                </p>
-
-                <p>July 2023 - April 2024</p>
-
-                <ul>
-                    <li>Mapping and analysing company assets.</li>
-
-                    <li>
-                        Operations and maintenance of company water assets.
-                    </li>
-
-                    <li>
-                        Assisting in company projects.
-                    </li>
-                </ul>
-            </li>
-
-
-            <li>
-                <h3>Water and Environmental Engineer</h3>
-
-                <p>
-                    Othaya Water and Sanitation Company (OTHYASCO)
-                </p>
-
-                <p>January 2016 - December 2017</p>
-
-                <ul>
-                    <li>Conducting technical assessments.</li>
-
-                    <li>Coordinating field activities.</li>
-
-                    <li>
-                        Developing practical solutions to water and
-                        environmental challenges.
-                    </li>
-
-                    <li>
-                        Training and mentoring Technical Department staff.
-                    </li>
-
-                    <li>
-                        Development of GIS database for company assets
-                        using ESRI ArcGIS software and merging the data
-                        with Mapbox.
-                    </li>
-                </ul>
-            </li>
-
-        </ul>
-
+                <div class="experience-card">
+                    <div class="experience-card-header">
+                        <h3>Water and Environmental Engineer</h3>
+                        <span class="experience-date">January 2016 - December 2017</span>
+                    </div>
+                    <p class="experience-company">Othaya Water and Sanitation Company (OTHYASCO)</p>
+                    <ul class="experience-details">
+                        <li>Conducting technical assessments.</li>
+                        <li>Coordinating field activities.</li>
+                        <li>Developing practical solutions to water and environmental challenges.</li>
+                        <li>Training and mentoring Technical Department staff.</li>
+                        <li>Development of GIS database for company assets using ESRI ArcGIS software and merging the data with Mapbox.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education Background</h2>
 
-<section id="education">
-    <h2>Education Background</h2>
+            <div class="education-list">
+                <div class="education-card">
+                    <h3>Bachelor of Science in Water and Environmental Engineering</h3>
+                    <p class="education-school">Egerton University</p>
+                    <p class="education-date">August 2012 - December 2018</p>
+                    <p class="education-grade">Second Class (Lower Division)</p>
+                </div>
 
-    <div class="education-item">
-        <h3>Bachelor of Science in Water and Environmental Engineering</h3>
-        <p><strong>Egerton University</strong></p>
-        <p>August 2012 – December 2018</p>
-        <p>Second Class (Lower Division)</p>
-    </div>
+                <div class="education-card">
+                    <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+                    <p class="education-school">Othaya Boys High School</p>
+                    <p class="education-date">February 2008 - November 2011</p>
+                    <p class="education-grade">Mean Grade: B+</p>
+                </div>
 
-    <div class="education-item">
-        <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
-        <p><strong>Othaya Boys High School</strong></p>
-        <p>February 2008 – November 2011</p>
-        <p>Mean Grade: B+</p>
-    </div>
+                <div class="education-card">
+                    <h3>Kenya Certificate of Primary Education (KCPE)</h3>
+                    <p class="education-school">Evam Academy</p>
+                    <p class="education-date">January 2005 - November 2007</p>
+                    <p class="education-grade">Marks: 365/500</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="education-item">
-        <h3>Kenya Certificate of Primary Education (KCPE)</h3>
-        <p><strong>Evam Academy</strong></p>
-        <p>January 2005 – November 2007</p>
-        <p>Marks: 365/500</p>
-    </div>
-</section>
 
     <!-- ================= ACHIEVEMENTS ================= -->
-    <section id="achievements">
+    <section id="achievements" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
 
-        <h2>Achievements</h2>
+            <div class="achievements-list">
+                <div class="achievement-card">
+                    <h3>Successful Project Report Preparation and Submission</h3>
+                    <p>Planning, designing, budgeting, and preparing the Wakariru-Murera water supply project report.</p>
+                </div>
 
+                <div class="achievement-card">
+                    <h3>Successful Implementation of Non-Revenue Water Reduction Plan</h3>
+                    <p>Successfully supervised the implementation of a Non-Revenue Water (NRW) reduction plan.</p>
+                </div>
 
-        <div class="achievement-item">
+                <div class="achievement-card">
+                    <h3>Development of GIS Database for Company Assets</h3>
+                    <p>Developed a comprehensive GIS database for company assets using ESRI-ArcGIS software.</p>
+                </div>
 
-            <h3>
-                Successful Project Report Preparation and Submission
-            </h3>
+                <div class="achievement-card">
+                    <h3>Training and Mentoring Technical Staff</h3>
+                    <p>Provided training and mentorship to technical department staff, improving their skills and knowledge.</p>
+                </div>
 
-            <p>
-                Planning, designing, budgeting, and preparing the
-                Wakariru-Murera water supply project report.
-            </p>
-
+                <div class="achievement-card">
+                    <h3>Successful Project Report Preparation and Submission</h3>
+                    <ul>
+                        <li>Planning, designing, budgeting, and preparing the Wakariru-Mureru water supply project report, which was submitted to the County Government of Nyeri, Tana Water Works Development Agency (TWWDA), and Water Sector Trust Fund (WSTF) for external funding.</li>
+                        <li>Planning, designing, budgeting, and preparing the Kabati water supply project report, which was submitted and presented to the Global Water Organization for funding consideration through the WASH-FIN 2 Grants.</li>
+                        <li>Assisting Tana Water Works Development Agency (TWWDA) in designing the Naromoru water supply project and Naromoru Township sewerage project, with a total cost of Kshs 3.5 billion, to be funded by the African Development Bank (ADB).</li>
+                        <li>Successfully supervising the drilling and equipping of the Kabati borehole, funded by the National Government through Tana Water Works Development Agency (TWWDA).</li>
+                        <li>Preparing the data required for the 2023/2024 Waris data validation and presenting it to the Water Services Regulatory Board (WASREB).</li>
+                        <li>Assisting the company in applying for a valid water tariff from the Water Services Regulatory Board (WASREB) within a record time of three months.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-
-        <div class="achievement-item">
-
-            <h3>
-                Successful Implementation of Non-Revenue Water Reduction Plan
-            </h3>
-
-            <p>
-                Successfully supervised the implementation of a
-                Non-Revenue Water (NRW) reduction plan.
-            </p>
-
-        </div>
-
-
-        <div class="achievement-item">
-
-            <h3>
-                Development of GIS Database for Company Assets
-            </h3>
-
-            <p>
-                Developed a comprehensive GIS database for company
-                assets using ESRI-ArcGIS software.
-            </p>
-
-        </div>
-
-
-        <div class="achievement-item">4
-            <h3>
-                Training and Mentoring Technical Staff
-            </h3>
-
-            <p>
-                Provided training and mentorship to technical department
-                staff, improving their skills and knowledge.
-            </p>
-
-        </div>
-
-
-        <div class="achievement-item">
-
-            <h3>
-                Successful Project Report Preparation and Submission
-            </h3>
-
-            <ul>
-
-                <li>
-                    Planning, designing, budgeting, and preparing the
-                    Wakariru-Mureru water supply project report, which
-                    was submitted to the County Government of Nyeri,
-                    Tana Water Works Development Agency (TWWDA), and
-                    Water Sector Trust Fund (WSTF) for external funding.
-                </li>
-
-                <li>
-                    Planning, designing, budgeting, and preparing the
-                    Kabati water supply project report, which was
-                    submitted and presented to the Global Water
-                    Organization for funding consideration through
-                    the WASH-FIN 2 Grants.
-                </li>
-
-                <li>
-                    Assisting Tana Water Works Development Agency
-                    (TWWDA) in designing the Naromoru water supply
-                    project and Naromoru Township sewerage project,
-                    with a total cost of Kshs 3.5 billion, to be funded
-                    by the African Development Bank (ADB).
-                </li>
-
-                <li>
-                    Successfully supervising the drilling and equipping
-                    of the Kabati borehole, funded by the National
-                    Government through Tana Water Works Development
-                    Agency (TWWDA).
-                </li>
-
-                <li>
-                    Preparing the data required for the 2023/2024 Waris
-                    data validation and presenting it to the Water
-                    Services Regulatory Board (WASREB).
-                </li>
-
-                <li>
-                    Assisting the company in applying for a valid water
-                    tariff from the Water Services Regulatory Board
-                    (WASREB) within a record time of three months.
-                </li>
-
-            </ul>
-
-        </div>
-
     </section>
 
 
     <!-- ================= SKILLS ================= -->
-    <section id="skills">
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
 
-        <h2>Skills</h2>
-
-        <ul>
-            <li>Google Earth and Cal-Topo</li>
-            <li>AutoCAD and Architecture</li>
-            <li>GIS Database Development</li>
-            <li>ESRI-ArcGIS Software</li>
-            <li>Kobo Toolbox and M-Water</li>
-            <li>Spreadsheet Design and Civil 3D</li>
-            <li>ArcGIS and QGIS</li>
-        </ul>
-
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                    <span>Google Earth and Cal-Topo</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    <span>AutoCAD and Architecture</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                    <span>GIS Database Development</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+                    <span>ESRI-ArcGIS Software</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    <span>Kobo Toolbox and M-Water</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <span>Spreadsheet Design and Civil 3D</span>
+                </div>
+                <div class="skill-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+                    <span>ArcGIS and QGIS</span>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <!-- ================= PROJECTS ================= -->
-    <section id="projects">
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
 
-        <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Water Supply System Design</h3>
+                    <p>Design of a water supply system for a rural community, including the development of hydraulic models and the selection of appropriate materials and equipment.</p>
+                </div>
 
-        <ul>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Environmental Impact Assessment</h3>
+                    <p>Conducted an environmental impact assessment for a proposed water treatment plant, including the identification of potential environmental risks and the development of mitigation measures.</p>
+                </div>
 
-            <li>
-                <h3>Water Supply System Design</h3>
-
-                <p>
-                    Design of a water supply system for a rural community,
-                    including the development of hydraulic models and the
-                    selection of appropriate materials and equipment.
-                </p>
-            </li>
-
-
-            <li>
-                <h3>Environmental Impact Assessment</h3>
-
-                <p>
-                    Conducted an environmental impact assessment for a
-                    proposed water treatment plant, including the
-                    identification of potential environmental risks
-                    and the development of mitigation measures.
-                </p>
-            </li>
-
-
-            <li>
-                <h3>GIS Database Development</h3>
-
-                <p>
-                    Developed a GIS database for a water utility company,
-                    including the mapping of assets and the integration
-                    of data from various sources.
-                </p>
-            </li>
-
-        </ul>
-
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                    </div>
+                    <h3>GIS Database Development</h3>
+                    <p>Developed a GIS database for a water utility company, including the mapping of assets and the integration of data from various sources.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <!-- ================= CONTACT ================= -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>
-            If you would like to get in touch with me, please feel free
-            to reach out via email or phone.
-        </p>
-
-        <ul>
-            <li>Email: mwangi667@gmail.com</li>
-            <li>Phone: +254703210939</li>
-        </ul>
-
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-text">
+                If you would like to get in touch with me, please feel free
+                to reach out via email or phone.
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>mwangi667@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0878C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    <span>+254703210939</span>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <!-- ================= FOOTER ================= -->
-    <footer>
-
-        <p>
-            &copy;<span id="year"></span>
-            Geoffrey Mwangi Njogo. All rights reserved.
-        </p>
-
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Geoffrey Mwangi Njogo. All rights reserved.</p>
+        </div>
     </footer>
 
 
     <script src="script.js"></script>
-
 </body>
 </html>

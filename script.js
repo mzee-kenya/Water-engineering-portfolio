@@ -1,33 +1,72 @@
 document.addEventListener("DOMContentLoaded", function () {
+    /* =====================================================
+       MOBILE HAMBURGER MENU
+       ===================================================== */
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", function () {
+            this.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+
+        // Close mobile menu when a link is clicked
+        navLinks.querySelectorAll(".nav-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            });
+        });
+
+        // Close mobile menu on outside click
+        document.addEventListener("click", function (e) {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            }
+        });
+    }
+
+
+    /* =====================================================
+       SECTION ROUTING (SPA-style)
+       ===================================================== */
     const sections = document.querySelectorAll("body > section");
-    // Target all links that have anchor hashes (in nav and inside hero buttons)
     const links = document.querySelectorAll('a[href^="#"]');
+    const navLinkElements = document.querySelectorAll(".nav-link");
 
     function showSection(id) {
         if (!id || id === "#") id = "#home";
 
-        // Hide all top-level sections
-        sections.forEach(section => {
+        sections.forEach(function (section) {
             section.style.display = "none";
         });
 
-        // Show selected section
         const selectedSection = document.querySelector(id);
         if (selectedSection) {
             selectedSection.style.display = "block";
         } else {
-            // Fallback to home if ID is not found
             const homeSection = document.querySelector("#home");
             if (homeSection) homeSection.style.display = "block";
         }
+
+        // Update active nav link
+        navLinkElements.forEach(function (link) {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === id) {
+                link.classList.add("active");
+            }
+        });
+
+        // Scroll to top of page
+        window.scrollTo(0, 0);
     }
 
-    // Add click event listener to all anchor links
-    links.forEach(link => {
+    links.forEach(function (link) {
         link.addEventListener("click", function (event) {
             const target = this.getAttribute("href");
 
-            // Only override if target is an internal section hash
             if (target && target.startsWith("#")) {
                 event.preventDefault();
                 showSection(target);
@@ -36,16 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Handle Browser Back / Forward buttons
     window.addEventListener("popstate", function () {
         showSection(window.location.hash || "#home");
     });
 
-    // Display section based on current URL hash on load (or default to #home)
+    // Show section based on current URL hash on load
     const initialHash = window.location.hash || "#home";
     showSection(initialHash);
 
-    // Dynamically set footer year
+
+    /* =====================================================
+       FOOTER YEAR
+       ===================================================== */
     const yearSpan = document.getElementById("year");
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
